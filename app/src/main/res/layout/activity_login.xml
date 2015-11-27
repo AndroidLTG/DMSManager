@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="androidltg.stanstudios.com.dmsmanager.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space0">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space0"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_above="@+id/imageloading" />
+    <ImageView
+        android:id="@+id/imageloading"
+        android:src="@drawable/online"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/editusername"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editusername"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/space"
+        android:layout_toRightOf="@+id/space"
+        android:background="@drawable/customeditthanhtoan"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Nhập tên tài khoản"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Dms.RainBow" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/editusername" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/editusername"
+        android:layout_alignLeft="@+id/editusername"
+        android:layout_alignRight="@+id/editusername"
+        android:layout_alignStart="@+id/editusername"
+
+        android:layout_below="@+id/space"
+        android:background="@drawable/customeditthanhtoan"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Nhập mật khẩu"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:text="123" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/editpassword" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_alignRight="@+id/editusername"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space1"
+        android:background="@drawable/buttoncn_selector"
+        android:text="Đăng nhập"
+        android:textColor="@color/grey"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_toEndOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/buttonlogin" />
+
+    <Button
+        android:id="@+id/buttoninputagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space2"
+        android:background="@drawable/buttoncn_selector"
+        android:text="Nhập lại"
+        android:textColor="@color/grey"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_toEndOf="@+id/space2" />
+
+</RelativeLayout>

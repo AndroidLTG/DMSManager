@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editdialoginputsaleother"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/abc_edit_text_material"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Nhập số lượng"
+            android:inputType="numberDecimal"
+            android:numeric="decimal" />
+        <Spinner
+            android:id="@+id/spinothersale"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btndialogclosesaleother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombuttoncn"
+        android:text="Đồng ý" />
+
+</LinearLayout>

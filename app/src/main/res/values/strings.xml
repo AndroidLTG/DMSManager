@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">DMSManager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_food</item>
+    </string-array>
+    <string-array name="image_table">
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+        <item>@drawable/imagetable</item>
+    </string-array>
+    <string name="title_activity_main_order">MainOrder</string>
+    <string name="title_activity_statistic">Statistic</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_table_opening">TableOpening</string>
+    <string name="title_activity_search_item">SearchItem</string>
+    <string name="title_activity_sale">SaleActivity</string>
+</resources>

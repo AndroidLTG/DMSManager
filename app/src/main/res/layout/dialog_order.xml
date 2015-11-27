@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:weightSum="7"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtdialogtitle"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Món ăn "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtdialogprice"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="20,000 VNĐ"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editdialoginput"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:background="@drawable/abc_edit_text_material"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Nhập số lượng"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/edit_order_description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/abc_edit_text_material"
+            android:hint="Nhập ghi chú" />
+
+        <Spinner
+            android:id="@+id/spinerdescription"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:touchscreenBlocksFocus="false"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent">
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_height="match_parent">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:id="@+id/btndialogorder1"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:layout_width="match_parent"
+                    android:text="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:id="@+id/btndialogorder4"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="4"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:id="@+id/btndialogorder7"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="7"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:id="@+id/btndialogorderphay"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="."
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_height="match_parent">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btndialogorder2"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_selector_key"
+                    android:text="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btndialogorder5"
+                    android:background="@drawable/button_selector_key"
+                    android:text="5"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="8"
+                    android:id="@+id/btndialogorder8"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <Button
+                    android:id="@+id/btndialogorder0"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="0"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_height="match_parent">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:layout_width="match_parent"
+                    android:text="3"
+                    android:id="@+id/btndialogorder3"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btndialogorder6"
+                    android:background="@drawable/button_selector_key"
+                    android:text="6"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_weight="1"
+                    android:text="9"
+                    android:id="@+id/btndialogorder9"
+                    android:background="@drawable/button_selector_key"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <Button
+                    android:id="@+id/btndialogorderxoa"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_key"
+                    android:text="Xóa"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btndialogcancel"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:background="@drawable/buttonkv_selector"
+                android:text="Hủy bỏ" />
+            <Button
+                android:id="@+id/btndialogclose"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:background="@drawable/buttoncn_selector"
+                android:text="Đồng ý" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

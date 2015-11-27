@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="androidltg.stanstudios.com.dmsmanager.TableOpening">
+    <TextView
+        android:id="@+id/txtopening"
+        android:layout_width="match_parent"
+        android:background="@drawable/customedittext"
+        android:text="DANH SÁCH CÁC HÓA ĐƠN CHƯA THANH TOÁN"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/gridViewDangmo"
+        android:layout_below="@+id/txtopening"
+        android:layout_above="@+id/btndongopening"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:columnWidth="@dimen/column_with"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+    <Button
+        android:id="@+id/btndongopening"
+        android:text="ĐÓNG"
+        android:background="@drawable/custombuttonkv"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidltg.stanstudios.com.dmsmanager.Main"
+    android:background="@android:color/holo_blue_dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linerchinh"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:id="@+id/linerkhuvuc"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/txtvitrihientai"
+            android:background="@color/red"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:text="TẦNG 1"
+            android:layout_height="25dp" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:columnWidth="@dimen/column_with"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerbutton"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/linerbuttonkv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtusername"
+                android:text="Administrator"
+                android:gravity="center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:layout_height="25dp"
+                android:background="#008123"
+
+                 />
+            <ListView
+                android:id="@+id/listkhuvuc"
+                android:layout_below="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:id="@+id/linerbuttoncn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btnthongtin"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_weight="1"
+
+                android:text="THÔNG TIN"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/btndangmo"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncn_selector"
+                android:text="ĐANG MỞ"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/btnthongke"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size"
+                android:text="THỐng kê"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/btndangxuat"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+                android:text="ĐĂNG XUẤT"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/progress_size_height"
+            android:max="100"
+            android:progress="10"
+            android:progressBackgroundTint="@color/primary_dark_material_dark"
+            android:secondaryProgress="30"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

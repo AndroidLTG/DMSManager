@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/customedittext"
+        android:weightSum="2"
+        android:layout_width="@dimen/column_with"
+        android:layout_height="@dimen/column_height">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/openhoadonso"
+                android:text="SỐ :1"
+                android:layout_width="0dp"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:gravity="left|center_vertical"
+
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/openbanso"
+                android:textSize="@dimen/text_size"
+                android:text="BÀN 01"
+                android:gravity="right|center_vertical"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/opendate"
+                android:gravity="left|center_vertical"
+                android:text="GIỜ 17:11 - 19:00"
+                android:textSize="@dimen/text_size"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/openmoney"
+
+                android:text="120.000"
+                android:gravity="right|center_vertical"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

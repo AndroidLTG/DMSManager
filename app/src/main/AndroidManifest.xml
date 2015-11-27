@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="androidltg.stanstudios.com.dmsmanager" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+        <activity
+
+            android:name=".Login"
+            android:label="DMS Manager New" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".MainOrder"
+            android:label="@string/title_activity_main_order"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".TableOpening"
+            android:label="@string/title_activity_table_opening"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <receiver android:name=".UpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SearchItem"
+            android:label="@string/title_activity_search_item"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".SaleActivity"
+            android:label="@string/title_activity_sale"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

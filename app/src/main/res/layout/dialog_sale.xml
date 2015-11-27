@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editdialoginputsale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/abc_edit_text_material"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Nhập số lượng"
+        android:inputType="numberDecimal"
+        android:numeric="decimal" />
+
+    <Button
+        android:id="@+id/btndialogclosesale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombuttoncn"
+        android:text="Đồng ý" />
+
+</LinearLayout>

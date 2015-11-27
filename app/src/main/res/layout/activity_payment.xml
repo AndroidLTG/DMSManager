@@ -1,0 +1,500 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="androidltg.stanstudios.com.dmsmanager.Payment">
+    <TextView
+        android:id="@+id/txtthanhtoanhoadon"
+        android:text="THANH TOÁN HÓA ĐƠN SỐ 3 -BÀN 3"
+        android:textStyle="bold"
+        android:background="@color/red"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtthanhtoanhoadon"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="7"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn10k"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncn_selector"
+                android:text="10,000"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn20k"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncn_selector"
+                android:text="20,000"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn50k"
+                android:text="50,000"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn100k"
+                android:text="100,000"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn200k"
+                android:text="200,000"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn500k"
+                android:layout_weight="1"
+                android:text="500,000"
+                android:background="@drawable/buttoncn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/btn1000k"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncn_selector"
+                android:text="1,000,000"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="#0B2161"
+
+                android:weightSum="3"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textStyle="bold"
+                        android:text="TỔNG TIỀN"
+                        android:layout_height="0dp"  />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textStyle="bold"
+                        android:text="KHÁCH ĐƯA"
+                        android:layout_height="0dp"  />
+                    <TextView
+                        android:id="@+id/txtkhachnotra"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textStyle="bold"
+                        android:text="KHÁCH NỢ"
+                        android:layout_height="0dp"  />
+                </LinearLayout>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <EditText
+                        android:id="@+id/editthanhtoantongtien"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="italic|bold"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:background="@drawable/customedittext"
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <EditText
+                        android:id="@+id/editthanhtoankhachdua"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="italic|bold"
+                        android:textColor="@color/black"
+                        android:paddingRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:background="@drawable/customeditthanhtoan"
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <EditText
+                        android:id="@+id/editthanhtoankhachno"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="italic|bold"
+                        android:textColor="@color/black"
+                        android:paddingRight="5dp"
+                        android:gravity="right|center_vertical"
+                        android:background="@drawable/customedittext"
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_height="match_parent">
+                    <Space
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+                    <Button
+                        android:id="@+id/btnthanhtoannhaplai"
+                        android:background="@drawable/buttoncn_selector"
+                        android:text="NHẬP LẠI"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        android:layout_height="match_parent">
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:id="@+id/btnthanhtoan1"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:layout_width="match_parent"
+                            android:text="1"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:id="@+id/btnthanhtoan4"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:text="4"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:id="@+id/btnthanhtoan7"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:text="7"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:id="@+id/btnthanhtoan0"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:text="0"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                    </LinearLayout>
+                    <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        android:layout_height="match_parent">
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/btnthanhtoan2"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/button_selector_key"
+                            android:text="2"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/btnthanhtoan5"
+                            android:background="@drawable/button_selector_key"
+                            android:text="5"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:text="8"
+                            android:id="@+id/btnthanhtoan8"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:id="@+id/btnthanhtoan000"
+                            android:background="@drawable/button_selector_key"
+                            android:layout_weight="1"
+                            android:text="000"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        android:layout_height="match_parent">
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector_key"
+                            android:layout_width="match_parent"
+                            android:text="3"
+                            android:id="@+id/btnthanhtoan3"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/btnthanhtoan6"
+                            android:background="@drawable/button_selector_key"
+                            android:text="6"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:text="9"
+                            android:id="@+id/btnthanhtoan9"
+                            android:background="@drawable/button_selector_key"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/btnthanhtoantamtinh"
+                            android:background="@drawable/button_selector_key"
+                            android:text="TẠM TÍNH"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_height="match_parent">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_height="0dp">
+                        <Button
+                            android:layout_width="0dp"
+                            android:id="@+id/btnthanhtoantienmat"
+                            android:background="@drawable/buttoncn_selector"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size"
+                            android:text="Tiền mặt"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                        <Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent" />
+                        <Button
+                            android:layout_width="0dp"
+                            android:id="@+id/btnthanhtoanthe"
+                            android:textSize="@dimen/text_size"
+                            android:background="@drawable/buttoncn_selector"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textStyle="bold"
+                            android:text="Thẻ"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:layout_weight="1.5"
+                        android:id="@+id/btnthanhtoanhoadon"
+                        android:background="@drawable/buttoncn_selector"
+                        android:textStyle="bold"
+                        android:text="IN HÓA ĐƠN"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/btnthanhtoanhuybo"
+                        android:background="@drawable/buttonkv_selector"
+                        android:text="HỦY BỎ"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
